@@ -1,2 +1,5 @@
 Django==1.9
 psycopg2
+pillow
+django-extensions
+ipython

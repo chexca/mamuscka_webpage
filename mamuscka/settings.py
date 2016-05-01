@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
-#encoding:utf-8
+# encoding:utf-8
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '6r3s%0w5xh0%0u--^2^$7!n4^vl943w*2+q(radj&d_ev2$ic1'
 
@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SHELL_PLUS = "ipython"
 
 # Application definition
 
@@ -38,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shop',
+    'django_extensions',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -79,10 +82,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mamuscka',
-	'USER': 'mamuscka_user',
-	'PASSWORD': 'pRZLNv5F',
-	'HOST': 'localhost',
-	'PORT': '',
+        'USER': 'mamuscka_user',
+        'PASSWORD': 'pRZLNv5F',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
